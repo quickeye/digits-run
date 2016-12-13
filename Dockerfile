@@ -6,7 +6,7 @@ RUN mkdir /DATA && \
 	mkdir /DATA/digits/jobs && \
 	mkdir /DATA/digits/logs
 
-ADD digits.cfg /home/digits
+ADD digits.cfg /home/digits/
 EXPOSE 5000
 
 WORKDIR /home/digits

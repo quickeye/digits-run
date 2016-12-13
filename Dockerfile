@@ -6,9 +6,8 @@ RUN mkdir /DATA && \
 	mkdir /DATA/digits/jobs && \
 	mkdir /DATA/digits/logs
 
-
 WORKDIR /home/digits
-ADD digits.cfg digits/
+COPY digits.cfg digits/digits.cfg
 EXPOSE 5000
 
-CMD ["python digits-devserver"]
+CMD ["./digits-devserver"]
